@@ -1,0 +1,15 @@
+app:
+  name: poi-map-app
+  namespace: eformat
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/eformat-frontend
+  org: Summit23DevRHEL
+  name: eformat-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: eformat/poi-map-app
+  tag: latest
